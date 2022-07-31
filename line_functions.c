@@ -6,7 +6,7 @@ char *read_line(void)
     int bufsize = 0;
     char *buffer = malloc(sizeof(char) * bufsize);
 
-    size_t getlinefunc = getline(&line, &bufsize, stdin); /* getline allocates memory */
+    ssize_t getlinefunc = getline(&line, &bufsize, stdin); /* getline allocates memory */
 
     if (getlinefunc == -1)
     {
