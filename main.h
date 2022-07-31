@@ -14,6 +14,6 @@
 void shell_loop(void);
 char *read_line(void);
 char **split_line(char *line);
-size_t getline();
+ssize_t getline();
 
 #endif 
