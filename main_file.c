@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main(int argc, char **argv[])
+int main(int argc, char **argv)
 {
     shell_loop(); /* function to run in a loop */
 
