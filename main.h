@@ -24,7 +24,7 @@ int shell_cd(char **args);
 int shell_help(char **args);
 int shell_exit(char **args);
 int launch_shell(char **args);
-char *builtin_str[] = {
+char *builtin_str[1024] = {
   "cd",
   "help",
   "exit"
