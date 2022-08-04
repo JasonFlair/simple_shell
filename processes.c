@@ -2,7 +2,7 @@
 
 int launch_shell(char **args)
 {
-    pid_t child_pid
+    pid_t child_pid;
     pid_t wpid;
     int status;
 
