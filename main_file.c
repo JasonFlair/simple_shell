@@ -1,13 +1,13 @@
 #include "main.h"
 
-int main(int argc, char **argv)
+int main(int argc, char **argv, char * envp[])
 {
-    shell_loop(); /* function to run in a loop */
+    shell_loop(envp); /* function to run in a loop */
 
     return EXIT_SUCCESS;
 }
 
-void shell_loop(void) /* loop function */
+void shell_loop(char ** envp) /* loop function */
 {
     char *gotten_line;
     char **args;
@@ -18,7 +18,17 @@ void shell_loop(void) /* loop function */
         printf("> ");
         gotten_line = read_line();
         args = split_line(gotten_line);
-        status = execute_shell(args);
+        if (args[0] != NULL)
+        {
+            if (strcmp(args[0], "env") == 0)
+            {
+                check_env(envp);
+            }
+            else
+            {
+                status = execute_shell(args);
+            }
+        }
 
         free(gotten_line);
         free(args);

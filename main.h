@@ -11,9 +11,19 @@
 #define TOK_BUFSIZE 64
 #define TOK_DELIM " \t\r\n\a"
 
-void shell_loop(void);
+char *gotten_line;
+char **args;
+int status;
+
+void shell_loop(char ** envp);
 char *read_line(void);
 char **split_line(char *line);
+void check_env(char ** envp);
 ssize_t getline();
+int shell_cd(char **args);
+int shell_help(char **args);
+int shell_exit(char **args);
+char *builtin_str[];
+int (*builtin_func[]) (char **);
 
 #endif 
