@@ -1,10 +1,12 @@
 #include "main.h"
 
-void launch_shell()
+int launch_shell(char **args)
 {
-    pid_t child_pid = fork();
+    pid_t child_pid
     pid_t wpid;
     int status;
+
+    child_pid = fork();
 
     if (child_pid == 0) {
     if (execvp(args[0], args) == -1) /*if executuion fails*/ {

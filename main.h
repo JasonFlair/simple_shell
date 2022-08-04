@@ -23,7 +23,12 @@ ssize_t getline();
 int shell_cd(char **args);
 int shell_help(char **args);
 int shell_exit(char **args);
-char *builtin_str[];
+int launch_shell(char **args);
+char *builtin_str[] = {
+  "cd",
+  "help",
+  "exit"
+};
 int (*builtin_func[]) (char **);
 
 #endif 
