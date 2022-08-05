@@ -30,6 +30,5 @@ char *builtin_str[256] = {
   "help",
   "exit"
 };
-int (*builtin_func[]) (char **);
 
 #endif 
