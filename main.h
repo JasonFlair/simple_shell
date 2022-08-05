@@ -31,7 +31,7 @@ int (*builtin_func[]) (char **) = {
   &shell_help,
   &shell_exit
 };
-char *builtin_str[256] = {
+extern char *builtin_str[256] = {
   "cd",
   "help",
   "exit"
