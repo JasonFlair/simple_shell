@@ -6,8 +6,8 @@ int main(int argc, char **argv, char * envp[])
    {
         shell_loop(envp); /* function to run in a loop */
 
-        return EXIT_SUCCESS;
    }
+   return EXIT_SUCCESS;
 }
 
 void shell_loop(char ** envp) /* loop function */
