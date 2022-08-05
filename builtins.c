@@ -32,7 +32,7 @@ int shell_cd(char **args)
     }
     return 1;
 }
-int lsh_help(char **args)
+int shell_help(char **args)
 {
   int i;
   printf("Jason and Emmanuel's shell\n");
