@@ -1,8 +1,8 @@
 #include "main.h"
 
 int shell_cd(char **args);
-int shell_help(char **args);
-int shell_exit(char **args);
+int shell_help();
+int shell_exit();
 
 int shell_num_builtins() {
   return sizeof(builtin_str) / sizeof(char *);
@@ -22,7 +22,7 @@ int shell_cd(char **args)
     }
     return 1;
 }
-int shell_help(char **args)
+int shell_help()
 {
   int i;
   printf("Jason and Emmanuel's shell\n");
@@ -36,7 +36,7 @@ int shell_help(char **args)
   printf("Use the man command for information on other programs.\n");
   return 1;
 }
-int shell_exit(char **args)
+int shell_exit()
 {
   return 0;
 }
