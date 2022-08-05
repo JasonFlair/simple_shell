@@ -26,7 +26,7 @@ void shell_loop(char ** envp) /* loop function */
             }
             else
             {
-                status = execute_shell(args);
+                status = shell_execute(args);
             }
         }
 
