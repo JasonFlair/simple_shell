@@ -7,6 +7,11 @@ int shell_exit();
 int shell_num_builtins() {
   return sizeof(builtin_str) / sizeof(char *);
 }
+char *builtin_str[256] = {
+  "cd",
+  "help",
+  "exit"
+};
 int shell_cd(char **args)
 {
     if (args[1] == NULL)
