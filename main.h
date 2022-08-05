@@ -26,11 +26,7 @@ int shell_exit();
 int shell_launch(char **args);
 int shell_execute(char **args);
 int shell_num_builtins();
-int (*builtin_func[]) (char **) = {
-  &shell_cd,
-  &shell_help,
-  &shell_exit
-};
+int (*builtin_func[]) (char **);
 extern char *builtin_str[256];
 
 #endif 
