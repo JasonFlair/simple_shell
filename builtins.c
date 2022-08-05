@@ -12,11 +12,6 @@ char *builtin_str[256] = {
   "help",
   "exit"
 };
-int (*builtin_func[]) (char **) = {
-  &shell_cd,
-  &shell_help,
-  &shell_exit
-};
 int shell_cd(char **args)
 {
     if (args[1] == NULL)
