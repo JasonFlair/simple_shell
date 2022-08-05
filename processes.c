@@ -3,7 +3,6 @@
 int shell_launch(char **args)
 {
     pid_t child_pid;
-    pid_t wpid;
     int status;
 
     child_pid = fork();
@@ -17,7 +16,7 @@ int shell_launch(char **args)
     perror("nothing forked");
   } else {
     do {
-      wpid = waitpid(child_pid, &status, WUNTRACED);
+      waitpid(child_pid, &status, WUNTRACED);
     } while (!WIFEXITED(status) && !WIFSIGNALED(status));
   }
 
