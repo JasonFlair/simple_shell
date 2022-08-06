@@ -4,9 +4,9 @@ int shell_execute(char **args)
 {
   int i;
   builtins func[] = {
-  {"cd", shell_cd}
-  {"help", shell_help}
-  {"exit", shell_exit}
+  {"cd", shell_cd},
+  {"help", shell_help},
+  {"exit", shell_exit},
   {NULL, NULL}
 };
 
