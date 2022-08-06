@@ -12,11 +12,6 @@ char *builtin_str[256] = {
   "help",
   "exit"
 };
-int (*builtin_func[]) (char **) = {
-  &shell_cd,
-  &shell_help,
-  &shell_exit
-};
 int shell_cd(char **args)
 {
     if (args[1] == NULL)
@@ -32,7 +27,7 @@ int shell_cd(char **args)
     }
     return 1;
 }
-int shell_help()
+int shell_help(char **args)
 {
   int i;
   printf("Jason and Emmanuel's shell\n");
@@ -46,7 +41,7 @@ int shell_help()
   printf("Use the man command for information on other programs.\n");
   return 1;
 }
-int shell_exit()
+int shell_exit(char **args)
 {
   return 0;
 }

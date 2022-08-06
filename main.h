@@ -28,4 +28,10 @@ int shell_execute(char **args);
 int shell_num_builtins();
 char *builtin_str[256];
 
+typedef struct builtins
+{
+  char *str;
+  int (*f)(char * arg);
+} builtins;
+
 #endif 
