@@ -11,13 +11,18 @@ void shell_loop(char ** envp) /* loop function */
 {
     char *gotten_line;
     char **args;
-    int status;
+    int status, i;
 
     do
     {
         printf("> ");
         gotten_line = read_line();
         args = split_line(gotten_line);
+
+        for (i = 0; args[i] != NULL; i++)
+        {
+            printf("%s", args[i]);
+        }
         if (args[0] != NULL)
         {
             if (strcmp(args[0], "env") == 0)
