@@ -27,7 +27,7 @@ int shell_cd(char **args)
     }
     return 1;
 }
-int shell_help(char **args)
+int shell_help(__attribute__ ((unused))char **args)
 {
   int i;
   printf("Jason and Emmanuel's shell\n");
@@ -41,7 +41,7 @@ int shell_help(char **args)
   printf("Use the man command for information on other programs.\n");
   return 1;
 }
-int shell_exit(char **args)
+int shell_exit(__attribute__ ((unused))char **args)
 {
   return 0;
 }
