@@ -31,7 +31,7 @@ char *builtin_str[256];
 typedef struct builtins
 {
   char *str;
-  int (*f)(char * arg);
+  int (*f)(char **arg);
 } builtins;
 
 #endif 
