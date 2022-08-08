@@ -31,7 +31,7 @@ int shell_help(__attribute__ ((unused))char **args)
   printf("Type program names and arguments, and hit enter.\n");
   printf("The following are built in:\n");
 
-  for (i = 0; func[i].str != NULL; i++) {
+  for (i = 0; builtin_str != NULL; i++) {
     printf("  %s\n", builtin_str[i]);
   }
 
