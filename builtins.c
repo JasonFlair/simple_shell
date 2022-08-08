@@ -26,14 +26,14 @@ int shell_cd(char **args)
 }
 int shell_help(__attribute__ ((unused))char **args)
 {
-  /*int i; */
+  int i;
   printf("Jason and Emmanuel's shell\n");
   printf("Type program names and arguments, and hit enter.\n");
   printf("The following are built in:\n");
 
-  /*for (i = 0; func[i].str != NULL; i++) {
+  for (i = 0; func[i].str != NULL; i++) {
     printf("  %s\n", builtin_str[i]);
-  }*/
+  }
 
   printf("Use the man command for information on other programs.\n");
   return 1;

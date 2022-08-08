@@ -27,6 +27,7 @@ int shell_launch(char **args);
 int shell_execute(char **args);
 int shell_num_builtins();
 char *builtin_str[256];
+builtins func[];
 
 typedef struct builtins
 {
