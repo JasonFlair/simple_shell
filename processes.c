@@ -1,6 +1,6 @@
 #include "main.h"
 
-int shell_launch(char **args, char **envp)
+int shell_launch(char **args)
 {
     pid_t child_pid;
     int status;
@@ -8,7 +8,7 @@ int shell_launch(char **args, char **envp)
     child_pid = fork();
 
     if (child_pid == 0) {
-    if (execve(args[0], args, envp) == -1) /*if executuion fails*/ {
+    if (execvp(args[0], args) == -1) /*if executuion fails*/ {
       perror("shell error"); /* print error, else execute */
     }
     exit(EXIT_FAILURE);

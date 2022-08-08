@@ -23,8 +23,8 @@ ssize_t getline();
 int shell_cd(char **args);
 int shell_help();
 int shell_exit();
-int shell_launch(char **args, char **envp);
-int shell_execute(char **args, char **envp);
+int shell_launch(char **args);
+int shell_execute(char **args);
 int shell_num_builtins();
 char *builtin_str[256];
 

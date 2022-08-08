@@ -1,6 +1,6 @@
 #include "main.h"
 
-int shell_execute(char **args, char **envp)
+int shell_execute(char **args)
 {
   int i;
   builtins func[] = {
@@ -21,5 +21,5 @@ int shell_execute(char **args, char **envp)
     }
   }
 
-  return shell_launch(args, envp);
+  return shell_launch(args);
 }
