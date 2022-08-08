@@ -4,9 +4,6 @@ int shell_cd(char **args);
 int shell_help();
 int shell_exit();
 
-int shell_num_builtins() {
-  return sizeof(builtin_str) / sizeof(char *);
-}
 char *builtin_str[256] = {
   "cd",
   "help",
@@ -34,7 +31,7 @@ int shell_help(__attribute__ ((unused))char **args)
   printf("Type program names and arguments, and hit enter.\n");
   printf("The following are built in:\n");
 
-  for (i = 0; i < shell_num_builtins(); i++) {
+  for (i = 0; func[i].str != NULL; i++) {
     printf("  %s\n", builtin_str[i]);
   }
 
