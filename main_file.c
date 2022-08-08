@@ -33,5 +33,5 @@ void shell_loop(char ** envp) /* loop function */
 
         free(gotten_line);
         free(args);
-    } while (1);
+    } while (status);
 }
