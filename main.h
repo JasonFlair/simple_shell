@@ -33,10 +33,5 @@ typedef struct builtins
   char *str;
   int (*f)(char **arg);
 } builtins;
-builtins func[] = {
-  {"cd", shell_cd},
-  {"help", shell_help},
-  {"exit", shell_exit},
-  {NULL, NULL}
-};
+
 #endif 
