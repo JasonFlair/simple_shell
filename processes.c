@@ -8,7 +8,7 @@ int shell_launch(char **args)
     child_pid = fork();
 
     if (child_pid == 0) {
-    if (execve(args[0], args) == -1) /*if executuion fails*/ {
+    if (execve(args[0], args, check_env) == -1) /*if executuion fails*/ {
       perror("shell error"); /* print error, else execute */
     }
     exit(EXIT_FAILURE);
