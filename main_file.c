@@ -11,7 +11,7 @@ void shell_loop(char ** envp) /* loop function */
 {
     char *gotten_line;
     char **args;
-    int status, i;
+    int status;
 
     do
     {
