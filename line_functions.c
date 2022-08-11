@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_line- a function receives commands 
+ * read_line - a function receives commands 
  * inputed
  * Return: void.
 */
@@ -30,7 +30,7 @@ char *read_line(void)
 }
 
 /**
- * split_line- a function splits commands 
+ * split_line - a function splits commands 
  * and arguments
  * Return: tokens.
 */
