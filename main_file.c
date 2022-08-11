@@ -17,8 +17,6 @@ int main(__attribute__ ((unused))int argc, __attribute__ ((unused))char **argv)
 /**
  * shell_loop- a function causes a continous loop
  * until shell is exited.
- * @argc:argument count.
- * @argv: array of pointers.
  * Return: void.
 */
 void shell_loop(void) /* loop function */
@@ -28,8 +26,7 @@ void shell_loop(void) /* loop function */
 	int status;
 	int isPipe = 0;
 
-	do
-	{
+	do {
 		if (isatty(fileno(stdin)))
 		{
 			printf("> ");
