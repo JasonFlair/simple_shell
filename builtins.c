@@ -40,5 +40,5 @@ int shell_help(__attribute__ ((unused))char **args)
 }
 int shell_exit(__attribute__ ((unused))char **args)
 {
-  return 0;
+  return -1;
 }
