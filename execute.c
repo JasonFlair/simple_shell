@@ -2,7 +2,7 @@
 
 /**
  * shell_execute - a function to compare
- * and execute commands
+ * and execute the commands
  * @args: env pointer
  * Return: none.
  */
