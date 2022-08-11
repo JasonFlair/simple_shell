@@ -10,10 +10,10 @@ char *read_line(void)
 {
 	char *line = NULL;
 	size_t bufsize = 0;
-	h
+
 	ssize_t getlinefunc = getline(&line, &bufsize, stdin);
 	/* getline allocates memory */
-	h
+
 	if (getlinefunc == -1)
 	{
 		if (feof(stdin))
@@ -40,7 +40,7 @@ char **split_line(char *line)
 	int bufsize = TOK_BUFSIZE, i = 0;
 	char **tokens = malloc(bufsize * sizeof(char *));
 	char *token;
-	h
+
 	if (!tokens)
 	{
 		fprintf(stderr, "shell: error in allocation\n");
@@ -64,5 +64,5 @@ char **split_line(char *line)
 		token = strtok(NULL, TOK_DELIM);
 	}
 	tokens[i] = NULL;
-	return tokens;h
+	return tokens;
 }
