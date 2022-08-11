@@ -32,6 +32,7 @@ char *read_line(void)
 /**
 * split_line - a function splits commands
 * and arguments
+* @line: pointer to the line
 * Return: tokens.
 */
 
