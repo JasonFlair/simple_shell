@@ -9,6 +9,12 @@ char *builtin_str[256] = {
   "help",
   "exit"
 };
+/**
+ * shell_cd - a function for changing
+ * directories.
+ * @args: argument handled
+ * Return: 1.
+*/
 int shell_cd(char **args)
 {
     if (args[1] == NULL)
@@ -24,6 +30,11 @@ int shell_cd(char **args)
     }
     return 1;
 }
+/**
+ * shell_help - prints a message for help
+ * @args: argument handled
+ * Return: 1.
+*/
 int shell_help(__attribute__ ((unused))char **args)
 {
   int i;
@@ -38,6 +49,11 @@ int shell_help(__attribute__ ((unused))char **args)
   printf("Use the man command for information on other programs.\n");
   return 1;
 }
+/**
+ * shell_exit - exits shell
+ * @args: argument handled
+ * Return: 1.
+*/
 int shell_exit(__attribute__ ((unused))char **args)
 {
   return 0;
