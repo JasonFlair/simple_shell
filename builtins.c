@@ -32,6 +32,7 @@ int shell_cd(char **args)
 }
 /**
  * shell_help - prints a message for help
+ * @args: args pointer
  * Return: 1.
 */
 int shell_help(__attribute__ ((unused))char **args)
@@ -50,6 +51,7 @@ int shell_help(__attribute__ ((unused))char **args)
 }
 /**
  * shell_exit - exits shell
+ * @args: args pointer
  * Return: 1.
 */
 int shell_exit(__attribute__ ((unused))char **args)
