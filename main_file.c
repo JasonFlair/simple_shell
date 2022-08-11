@@ -15,7 +15,10 @@ void shell_loop(char ** envp) /* loop function */
 
     do
     {
-        printf("> ");
+        if isatty(stdin)
+        {
+            printf("> ");
+        }
         gotten_line = read_line();
         args = split_line(gotten_line);
 
