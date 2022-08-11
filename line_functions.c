@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * read_line- a function receives commands 
+ * inputed
+ * Return: void.
+*/
+
 char *read_line(void)
 {
     char *line = NULL;
@@ -22,6 +28,13 @@ char *read_line(void)
     }
     return line;
 }
+
+/**
+ * split_line- a function splits commands 
+ * and arguments
+ * Return: tokens.
+*/
+
 char **split_line(char *line)
 {
     int bufsize = TOK_BUFSIZE, i = 0;
