@@ -2,12 +2,12 @@
 
 int main(__attribute__ ((unused))int argc, __attribute__ ((unused))char **argv, char * envp[])
 {
-    shell_loop(envp); /* function to run in a loop */
+    shell_loop(); /* function to run in a loop */
 
     return EXIT_SUCCESS;
 }
 
-void shell_loop(char ** envp) /* loop function */
+void shell_loop() /* loop function */
 {
     char *gotten_line;
     char **args;
