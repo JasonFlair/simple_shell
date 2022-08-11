@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main(__attribute__ ((unused))int argc, __attribute__ ((unused))char **argv, char * envp[])
+int main(__attribute__ ((unused))int argc, __attribute__ ((unused))char **argv)
 {
     shell_loop(); /* function to run in a loop */
 
