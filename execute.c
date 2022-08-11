@@ -27,8 +27,8 @@ int shell_execute(char **args)
 	{
 		if (strcmp(args[0], func[i].str) == 0)
 		{
-			return func[i].f(args);
+			return (func[i].f(args));
 		}
 	}
-	return shell_launch(args);
+	return (shell_launch(args));
 }
