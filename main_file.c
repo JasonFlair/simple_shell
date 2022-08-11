@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - runs the shell loop
- * shell_loop- a function causes a continous loop
- * until shell is exited.
+ * main - main function
  * @argc:argument count.
  * @argv: array of pointers.
  * Return: void.
@@ -15,7 +13,15 @@ int main(__attribute__ ((unused))int argc, __attribute__ ((unused))char **argv)
 
 	return EXIT_SUCCESS;
 }
-void shell_loop() /* loop function */
+
+/**
+ * shell_loop- a function causes a continous loop
+ * until shell is exited.
+ * @argc:argument count.
+ * @argv: array of pointers.
+ * Return: void.
+*/
+void shell_loop(void) /* loop function */
 {
 	char *gotten_line;
 	char **args;
