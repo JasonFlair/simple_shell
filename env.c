@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * check_env - a function to print 
+ * check_env - a function to print
  * the env
  * @envp: env pointer
  * Return: none.
@@ -15,4 +15,4 @@ void check_env(char **envp)
 	{
 		printf("%s\n", envp[i]);
 	}
-} 
+}
