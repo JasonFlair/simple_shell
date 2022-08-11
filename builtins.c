@@ -47,7 +47,7 @@ int shell_help(void)
 	printf("  %s\n", builtin_str[i]);
 	}
 	printf("Use the man command for information on other programs.\n");
-	return 1;
+	return (1);
 }
 /**
  * shell_exit - exits shell
@@ -56,5 +56,5 @@ int shell_help(void)
 */
 int shell_exit(void)
 {
-	return 0;
+	return (0);
 }
