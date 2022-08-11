@@ -11,9 +11,9 @@ int shell_launch(char **args)
 {
 	pid_t child_pid;
 	int status;
-	
+
 	child_pid = fork();
-	
+
 	if (child_pid == 0)
 	{
 		if (execvp(args[0], args) == -1)
@@ -34,6 +34,6 @@ int shell_launch(char **args)
 			waitpid(child_pid, &status, WUNTRACED);
 		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
-	
+
 	return (1);
 }
