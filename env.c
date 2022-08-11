@@ -2,7 +2,7 @@
 
 extern char **environ;
 
-void check_env(char ** envp)
+void check_env(char **envp)
 {
     int i;
 
