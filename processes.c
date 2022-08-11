@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * shell_launch - a function to launch
+ * the processes
+ * @args: args pointer
+ * Return: 1.
+ */
+
 int shell_launch(char **args)
 {
 	pid_t child_pid;
@@ -17,7 +24,7 @@ int shell_launch(char **args)
 			exit(EXIT_FAILURE);
 		}
 	}
-	else if (child_pid < 0) 
+	else if (child_pid < 0)
 	{ /* if no child process */
 		perror("nothing forked");
 	}
