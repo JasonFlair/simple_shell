@@ -3,7 +3,7 @@
 /**
  * shell_loop- a function causes a continous loop
  * until shell is exited.
- * @arc:argument count.
+ * @argc:argument count.
  * @argv: array of pointers.
  * Return: void.
 */
