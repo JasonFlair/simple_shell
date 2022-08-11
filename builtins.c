@@ -32,7 +32,6 @@ int shell_cd(char **args)
 }
 /**
  * shell_help - prints a message for help
- * @args: argument handled
  * Return: 1.
 */
 int shell_help(void)
@@ -51,7 +50,6 @@ int shell_help(void)
 }
 /**
  * shell_exit - exits shell
- * @args: argument handled
  * Return: 1.
 */
 int shell_exit(void)
