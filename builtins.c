@@ -5,9 +5,9 @@ int shell_help(void);
 int shell_exit(void);
 
 char *builtin_str[256] = {
-  "cd",
-  "help",
-  "exit"
+	"cd",
+	"help",
+	"exit"
 };
 /**
  * shell_cd - a function for changing
