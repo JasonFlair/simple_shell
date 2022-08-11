@@ -2,6 +2,13 @@
 
 extern char **environ;
 
+/**
+ * check_env - a function to print 
+ * the env
+ * @envp: env pointer
+ * Return: none.
+*/
+
 void check_env(char **envp)
 {
 	int i;
