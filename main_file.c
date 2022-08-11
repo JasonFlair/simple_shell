@@ -12,12 +12,14 @@ void shell_loop() /* loop function */
     char *gotten_line;
     char **args;
     int status;
+    int isPipe = 0;
 
     do
     {
         if (isatty(fileno(stdin)))
         {
             printf("> ");
+            isPipe = 1;
         }
         gotten_line = read_line();
         args = split_line(gotten_line);
@@ -25,5 +27,5 @@ void shell_loop() /* loop function */
 
         free(gotten_line);
         free(args);
-    } while (status);
+    } while (status && isPipe);
 }
