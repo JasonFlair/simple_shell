@@ -11,7 +11,7 @@ int main(__attribute__ ((unused))int argc, __attribute__ ((unused))char **argv)
 {
 	shell_loop(); /* function to run in a loop */
 
-	return EXIT_SUCCESS;
+	return (EXIT_SUCCESS);
 }
 
 /**
