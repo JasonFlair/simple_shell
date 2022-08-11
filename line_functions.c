@@ -1,14 +1,11 @@
 #include "main.h"
 
-<<<<<<< HEAD
-=======
 /**
  * read_line - a function receives commands 
  * inputed
  * Return: void.
 */
 
->>>>>>> 86667efd6b5e918335a68c3b98fccff36db1e85e
 char *read_line(void)
 {
     char *line = NULL;
@@ -31,8 +28,6 @@ char *read_line(void)
     }
     return line;
 }
-<<<<<<< HEAD
-=======
 
 /**
  * split_line - a function splits commands 
@@ -40,7 +35,6 @@ char *read_line(void)
  * Return: tokens.
 */
 
->>>>>>> 86667efd6b5e918335a68c3b98fccff36db1e85e
 char **split_line(char *line)
 {
     int bufsize = TOK_BUFSIZE, i = 0;
