@@ -15,7 +15,7 @@ char *gotten_line;
 char **args;
 int status;
 
-void shell_loop();
+void shell_loop(void);
 char *read_line(void);
 char **split_line(char *line);
 void check_env(char ** envp);
