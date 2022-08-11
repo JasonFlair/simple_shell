@@ -15,7 +15,7 @@ void shell_loop(char ** envp) /* loop function */
 
     do
     {
-        if isatty(stdin)
+        if (isatty(fileno(stdin)))
         {
             printf("> ");
         }
