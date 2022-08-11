@@ -1,8 +1,8 @@
 #include "main.h"
 
 int shell_cd(char **args);
-int shell_help();
-int shell_exit();
+int shell_help(void);
+int shell_exit(void);
 
 char *builtin_str[256] = {
   "cd",
@@ -35,7 +35,7 @@ int shell_cd(char **args)
  * @args: argument handled
  * Return: 1.
 */
-int shell_help(__attribute__ ((unused))char **args)
+int shell_help(__attribute__ (void)
 {
   int i;
   printf("Jason and Emmanuel's shell\n");
@@ -54,7 +54,7 @@ int shell_help(__attribute__ ((unused))char **args)
  * @args: argument handled
  * Return: 1.
 */
-int shell_exit(__attribute__ ((unused))char **args)
+int shell_exit(__attribute__ (void)
 {
   return 0;
 }
