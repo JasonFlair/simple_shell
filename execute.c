@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * shell_execute - a function to compare 
+ * and execute commands
+ * @args: env pointer
+ * Return: none.
+*/
+
 int shell_execute(char **args)
 {
   int i;
