@@ -64,5 +64,5 @@ char **split_line(char *line)
 		token = strtok(NULL, TOK_DELIM);
 	}
 	tokens[i] = NULL;
-	return tokens;
+	return (tokens);
 }
