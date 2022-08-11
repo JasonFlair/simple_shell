@@ -46,7 +46,7 @@ char **split_line(char *line)
 		fprintf(stderr, "shell: error in allocation\n");
 		exit(EXIT_FAILURE);
 	}
-	h
+
 	token = strtok(line, TOK_DELIM);
 	while (token != NULL)
 	{
